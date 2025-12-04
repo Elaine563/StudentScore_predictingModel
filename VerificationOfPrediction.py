@@ -2,12 +2,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 df = pd.read_csv("SET C.csv") 
 
 x = df["Hours"].values
 y = df["Scores"].values
-
 
 # Use optimized θ from QC
 theta0 = 2.484   # interception point
@@ -40,7 +38,6 @@ print("   MAE:", mae)
 hours_input = 8
 prediction_8_hours = predict(hours_input)
 print(f"\nPrediction for {hours_input} study hours:", prediction_8_hours)
-
 
 #Actual vs Predicted
 plt.scatter(x, y, label="Actual Data")
