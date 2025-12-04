@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 
 # Load CSV
-file_path = r"C:\Users\User\OneDrive - UOW Malaysia KDU\Documents\Education\01 Degree Studies\Y2S1\IS\Assignment\SET C.csv"
-df = pd.read_csv(file_path)
+df = pd.read_csv("SET C.csv")
+print(df.head())
 
 # Extract columns
 x = df["Hours"]
